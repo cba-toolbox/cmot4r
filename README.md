@@ -6,9 +6,10 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The cmot4r package includes the following R packages: -
-cba-toolbox/PRLpreprocess : Preprocessing of Probabilistic Reversal
-Learning Data
+cmot4r is an R package that provides functions for data preprocessing
+and computational modeling using data with CBAT. cmot4r package includes
+the following R packages: - cba-toolbox/PRLpreprocess : Preprocessing of
+Probabilistic Reversal Learning Data
 
 ## Installation
 
@@ -22,7 +23,14 @@ remotes::install_github("cba-toolbox/cmot4r")
 
 ## Example
 
+cmot4rintegrates several R packages from different GitHub repositories,
+so installing cmot4r results in the installation of multiple
+GitHub-based R packages. Below, I demonstrate how to use the
+PRLpreprocess package, which handles preprocessing for probabilistic
+reversal learning tasks, to read and preprocess CSV file data.
+
 ``` r
-library(cmot4r)
-data <- PRL_preprocess_csv("data_v.csv")
+data <- PRLpreprocess::PRL_preprocess_csv("data.csv")
+plot(data$choice)
+plot(data$reward)
 ```
