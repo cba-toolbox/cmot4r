@@ -8,8 +8,10 @@
 
 cmot4r is an R package that provides functions for data preprocessing
 and computational modeling using data with CBAT. cmot4r package includes
-the following R packages: - cba-toolbox/PRLpreprocess : Preprocessing of
-Probabilistic Reversal Learning Data
+the following R packages:
+
+- [cba-toolbox/PRLpreprocess](https://github.com/cba-toolbox/PRLpreprocess)
+  : Preprocessing of Probabilistic Reversal Learning Data
 
 ## Installation
 
